@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B106DB7F1974E0060019EBE7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B106DB7D1974E0060019EBE7 /* MainViewController.m */; };
+		B106DB801974E0060019EBE7 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B106DB7E1974E0060019EBE7 /* MainViewController.xib */; };
+		B106DB841974E20B0019EBE7 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B106DB821974E20B0019EBE7 /* PaymentViewController.m */; };
+		B106DB851974E20B0019EBE7 /* PaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B106DB831974E20B0019EBE7 /* PaymentViewController.xib */; };
+		B106DB891974E2170019EBE7 /* AssetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B106DB871974E2170019EBE7 /* AssetViewController.m */; };
+		B106DB8A1974E2170019EBE7 /* AssetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B106DB881974E2170019EBE7 /* AssetViewController.xib */; };
+		B106DB8E1974E2210019EBE7 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B106DB8C1974E2210019EBE7 /* SettingsViewController.m */; };
+		B106DB8F1974E2210019EBE7 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B106DB8D1974E2210019EBE7 /* SettingsViewController.xib */; };
+		B106DB941974E6540019EBE7 /* HeroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B106DB921974E6540019EBE7 /* HeroCell.m */; };
+		B106DB951974E6540019EBE7 /* HeroCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B106DB931974E6540019EBE7 /* HeroCell.xib */; };
 		B1CA008B195B4AEF008B8FFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CA008A195B4AEF008B8FFD /* Foundation.framework */; };
 		B1CA008D195B4AEF008B8FFD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CA008C195B4AEF008B8FFD /* CoreGraphics.framework */; };
 		B1CA008F195B4AEF008B8FFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CA008E195B4AEF008B8FFD /* UIKit.framework */; };
@@ -32,6 +42,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B106DB7C1974E0060019EBE7 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		B106DB7D1974E0060019EBE7 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		B106DB7E1974E0060019EBE7 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		B106DB811974E20B0019EBE7 /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
+		B106DB821974E20B0019EBE7 /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
+		B106DB831974E20B0019EBE7 /* PaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentViewController.xib; sourceTree = "<group>"; };
+		B106DB861974E2170019EBE7 /* AssetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetViewController.h; sourceTree = "<group>"; };
+		B106DB871974E2170019EBE7 /* AssetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetViewController.m; sourceTree = "<group>"; };
+		B106DB881974E2170019EBE7 /* AssetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AssetViewController.xib; sourceTree = "<group>"; };
+		B106DB8B1974E2210019EBE7 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		B106DB8C1974E2210019EBE7 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		B106DB8D1974E2210019EBE7 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		B106DB911974E6540019EBE7 /* HeroCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroCell.h; sourceTree = "<group>"; };
+		B106DB921974E6540019EBE7 /* HeroCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroCell.m; sourceTree = "<group>"; };
+		B106DB931974E6540019EBE7 /* HeroCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeroCell.xib; sourceTree = "<group>"; };
 		B1CA0087195B4AEF008B8FFD /* Mission Asset Fund.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mission Asset Fund.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1CA008A195B4AEF008B8FFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B1CA008C195B4AEF008B8FFD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -74,6 +99,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B106DB901974E4DB0019EBE7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B106DB7C1974E0060019EBE7 /* MainViewController.h */,
+				B106DB7D1974E0060019EBE7 /* MainViewController.m */,
+				B106DB7E1974E0060019EBE7 /* MainViewController.xib */,
+				B106DB811974E20B0019EBE7 /* PaymentViewController.h */,
+				B106DB821974E20B0019EBE7 /* PaymentViewController.m */,
+				B106DB831974E20B0019EBE7 /* PaymentViewController.xib */,
+				B106DB861974E2170019EBE7 /* AssetViewController.h */,
+				B106DB871974E2170019EBE7 /* AssetViewController.m */,
+				B106DB881974E2170019EBE7 /* AssetViewController.xib */,
+				B106DB8B1974E2210019EBE7 /* SettingsViewController.h */,
+				B106DB8C1974E2210019EBE7 /* SettingsViewController.m */,
+				B106DB8D1974E2210019EBE7 /* SettingsViewController.xib */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B106DB961974E65E0019EBE7 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				B106DB911974E6540019EBE7 /* HeroCell.h */,
+				B106DB921974E6540019EBE7 /* HeroCell.m */,
+				B106DB931974E6540019EBE7 /* HeroCell.xib */,
+			);
+			name = TableCells;
+			sourceTree = "<group>";
+		};
 		B1CA007E195B4AEF008B8FFD = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +163,8 @@
 			children = (
 				B1CA0099195B4AEF008B8FFD /* AppDelegate.h */,
 				B1CA009A195B4AEF008B8FFD /* AppDelegate.m */,
+				B106DB961974E65E0019EBE7 /* TableCells */,
+				B106DB901974E4DB0019EBE7 /* ViewControllers */,
 				B1CA009C195B4AEF008B8FFD /* Images.xcassets */,
 				B1CA0091195B4AEF008B8FFD /* Supporting Files */,
 			);
@@ -220,7 +276,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1CA0095195B4AEF008B8FFD /* InfoPlist.strings in Resources */,
+				B106DB8F1974E2210019EBE7 /* SettingsViewController.xib in Resources */,
+				B106DB801974E0060019EBE7 /* MainViewController.xib in Resources */,
+				B106DB951974E6540019EBE7 /* HeroCell.xib in Resources */,
+				B106DB8A1974E2170019EBE7 /* AssetViewController.xib in Resources */,
 				B1CA009D195B4AEF008B8FFD /* Images.xcassets in Resources */,
+				B106DB851974E20B0019EBE7 /* PaymentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +301,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1CA009B195B4AEF008B8FFD /* AppDelegate.m in Sources */,
+				B106DB7F1974E0060019EBE7 /* MainViewController.m in Sources */,
+				B106DB891974E2170019EBE7 /* AssetViewController.m in Sources */,
+				B106DB941974E6540019EBE7 /* HeroCell.m in Sources */,
+				B106DB8E1974E2210019EBE7 /* SettingsViewController.m in Sources */,
 				B1CA0097195B4AEF008B8FFD /* main.m in Sources */,
+				B106DB841974E20B0019EBE7 /* PaymentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +505,7 @@
 				B1CA00B5195B4AEF008B8FFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B1CA00B6195B4AEF008B8FFD /* Build configuration list for PBXNativeTarget "Mission Asset FundTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +514,7 @@
 				B1CA00B8195B4AEF008B8FFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
