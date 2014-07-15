@@ -7,6 +7,7 @@
 //
 
 #import "HeroCell.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation HeroCell
 
@@ -15,6 +16,9 @@
 - (void)awakeFromNib
 {
     // Initialization code
+    self.callToActionButton.layer.borderWidth = 1;
+    self.callToActionButton.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.callToActionButton.layer.cornerRadius = (self.callToActionButton.frame.size.width / 2);
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
@@ -27,8 +31,37 @@
 - (void)initWithGradient:(CGColorRef)startColor endColor:(CGColorRef)endColor
 {
     CGContextRef context = UIGraphicsGetCurrentContext();
-    [self drawLinearGradient:context rect:self.contentView.frame startColor:startColor endColor:endColor];
+//    [self drawLinearGradient:context rect:self.contentView.frame startColor:startColor endColor:endColor];
     
+}
+
+- (void)drawRect:(CGRect)rect
+{
+    NSLog(@"hello");
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGGradientRef gradient;
+    CGColorSpaceRef colorspace;
+    CGFloat locations[4] = { 0.0, 0.25, 0.5, 0.75 };
+    
+    NSArray *colors = @[(id)[UIColor redColor].CGColor,
+                        (id)[UIColor greenColor].CGColor,
+                        (id)[UIColor blueColor].CGColor,
+                        (id)[UIColor yellowColor].CGColor];
+    
+    colorspace = CGColorSpaceCreateDeviceRGB();
+    
+    gradient = CGGradientCreateWithColors(colorspace,
+                                          (CFArrayRef)colors, locations);
+    
+    CGPoint startPoint, endPoint;
+    startPoint.x = 0.0;
+    startPoint.y = 0.0;
+    
+    endPoint.x = 500;
+    endPoint.y = 500;
+    
+    CGContextDrawLinearGradient(context, gradient,
+                                startPoint, endPoint, 0);
 }
 
 - (void) drawLinearGradient:(CGContextRef)context rect:(CGRect)rect startColor:(CGColorRef)startColor endColor:(CGColorRef)endColor

@@ -35,7 +35,6 @@
                             </state>
                             <connections>
                                 <action selector="onPaymentsButtonTap:" destination="-1" eventType="touchUpInside" id="xEm-6i-IXB"/>
-                                <action selector="onTabBarPaymentsButtonTap:" destination="-1" eventType="touchUpInside" id="fPc-3i-EZ7"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbN-L6-fvU" userLabel="assetsButton">
@@ -46,7 +45,6 @@
                             </state>
                             <connections>
                                 <action selector="onAssetsButtonTap:" destination="-1" eventType="touchUpInside" id="xxH-EV-wFz"/>
-                                <action selector="onTabBarAssetsButtonTap:" destination="-1" eventType="touchUpInside" id="6Hb-Y2-FiW"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24i-nr-5BU" userLabel="settingsButton">
@@ -57,7 +55,6 @@
                             </state>
                             <connections>
                                 <action selector="onSettingsButtonTap:" destination="-1" eventType="touchUpInside" id="h6i-Pe-iiY"/>
-                                <action selector="onTabBarSettingsButtonTap:" destination="-1" eventType="touchUpInside" id="IDh-ru-kgX"/>
                             </connections>
                         </button>
                     </subviews>

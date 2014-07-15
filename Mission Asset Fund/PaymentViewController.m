@@ -30,9 +30,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // Set delegates
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    NSLog(@"hi");
+    
+    // Set nib names
+    [self.tableView registerNib:[UINib nibWithNibName:@"HeroCell" bundle:nil] forCellReuseIdentifier:@"HeroCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"SummaryCell" bundle:nil] forCellReuseIdentifier:@"SummaryCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"SecondaryCell" bundle:nil] forCellReuseIdentifier:@"SecondaryCell"];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,15 +58,14 @@
     if (indexPath.row == 0) {
         UIColor *startColor = [UIColor colorWithHexString:@"B2FDCF" alpha:1.0];
         UIColor *endColor = [UIColor colorWithHexString:@"01E9C1" alpha:1.0];
-        HeroCell *heroCell = [[HeroCell alloc] init];
-        heroCell.backgroundColor = [UIColor redColor];
-//        [heroCell initWithGradient:startColor.CGColor endColor:endColor.CGColor];
+        HeroCell *heroCell = [tableView dequeueReusableCellWithIdentifier:@"HeroCell"];
+        [heroCell initWithGradient:startColor.CGColor endColor:endColor.CGColor];
         return heroCell;
     } else if (indexPath.row == 1 || indexPath.row == 2) {
-        SecondaryCell *secondaryCell = [[SecondaryCell alloc] init];
+        SecondaryCell *secondaryCell = [tableView dequeueReusableCellWithIdentifier:@"SecondaryCell"];
         return secondaryCell;
     } else {
-        SummaryCell *summaryCell = [[SummaryCell alloc] init];
+        SummaryCell *summaryCell = [tableView dequeueReusableCellWithIdentifier:@"SummaryCell"];
         return summaryCell;
     }
 }
