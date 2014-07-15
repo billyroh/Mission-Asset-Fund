@@ -7,6 +7,10 @@
 //
 
 #import "PaymentViewController.h"
+#import "HeroCell.h"
+#import "SecondaryCell.h"
+#import "SummaryCell.h"
+#import <HexColors/HexColor.h>
 
 @interface PaymentViewController ()
 
@@ -28,6 +32,7 @@
     [super viewDidLoad];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    NSLog(@"hi");
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,12 +43,36 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return nil;
+    if (indexPath.row == 0) {
+        UIColor *startColor = [UIColor colorWithHexString:@"B2FDCF" alpha:1.0];
+        UIColor *endColor = [UIColor colorWithHexString:@"01E9C1" alpha:1.0];
+        HeroCell *heroCell = [[HeroCell alloc] init];
+        heroCell.backgroundColor = [UIColor redColor];
+//        [heroCell initWithGradient:startColor.CGColor endColor:endColor.CGColor];
+        return heroCell;
+    } else if (indexPath.row == 1 || indexPath.row == 2) {
+        SecondaryCell *secondaryCell = [[SecondaryCell alloc] init];
+        return secondaryCell;
+    } else {
+        SummaryCell *summaryCell = [[SummaryCell alloc] init];
+        return summaryCell;
+    }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 0) {
+        return 250.0;
+    } else if (indexPath.row == 1 || indexPath.row == 2) {
+        return 80;
+    } else {
+        return 80;
+    }
 }
 
 @end
