@@ -7,7 +7,7 @@
 //
 
 #import "PaymentViewController.h"
-#import "HeroCell.h"
+#import "CalculatorViewController.h"
 #import "SecondaryCell.h"
 #import "SummaryCell.h"
 #import <HexColors/HexColor.h>
@@ -60,6 +60,7 @@
         UIColor *endColor = [UIColor colorWithHexString:@"01E9C1" alpha:1.0];
         HeroCell *heroCell = [tableView dequeueReusableCellWithIdentifier:@"HeroCell"];
         [heroCell initWithGradient:startColor.CGColor endColor:endColor.CGColor];
+        heroCell.delegate = self;
         return heroCell;
     } else if (indexPath.row == 1 || indexPath.row == 2) {
         SecondaryCell *secondaryCell = [tableView dequeueReusableCellWithIdentifier:@"SecondaryCell"];
@@ -79,6 +80,13 @@
     } else {
         return 80;
     }
+}
+
+- (void)presentViewController:(HeroCell *)heroCell
+{
+    NSLog(@"hi");
+    CalculatorViewController *calculatorViewController = [[CalculatorViewController alloc] init];
+    [self presentViewController:calculatorViewController animated:YES completion:nil];
 }
 
 @end

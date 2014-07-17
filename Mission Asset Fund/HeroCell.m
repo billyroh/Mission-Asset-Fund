@@ -37,7 +37,6 @@
 
 - (void)drawRect:(CGRect)rect
 {
-    NSLog(@"hello");
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGGradientRef gradient;
     CGColorSpaceRef colorspace;
@@ -84,11 +83,13 @@
 }
 
 - (IBAction)onCallToActionTap:(id)sender {
+    NSLog(@"button tapped");
     [self presentViewController:self];
 }
 
 - (void)presentViewController:(HeroCell *)heroCell
 {
+    NSLog(@"delegating...");
     [self.delegate presentViewController:self];
 }
 @end

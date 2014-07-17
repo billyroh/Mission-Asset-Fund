@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HeroCell.h"
 
-@interface PaymentViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface PaymentViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, HeroCellDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 

@@ -22,6 +22,9 @@
 		B106DB9B1974E7160019EBE7 /* SummaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B106DB991974E7160019EBE7 /* SummaryCell.xib */; };
 		B106DB9F1974E7240019EBE7 /* SecondaryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B106DB9D1974E7240019EBE7 /* SecondaryCell.m */; };
 		B106DBA01974E7240019EBE7 /* SecondaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B106DB9E1974E7240019EBE7 /* SecondaryCell.xib */; };
+		B146E44A19762185001BF1D4 /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B146E44819762185001BF1D4 /* CalculatorViewController.m */; };
+		B146E44B19762185001BF1D4 /* CalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B146E44919762185001BF1D4 /* CalculatorViewController.xib */; };
+		B146E44E1976233B001BF1D4 /* CalculatorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B146E44D1976233B001BF1D4 /* CalculatorButton.m */; };
 		B1CA008B195B4AEF008B8FFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CA008A195B4AEF008B8FFD /* Foundation.framework */; };
 		B1CA008D195B4AEF008B8FFD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CA008C195B4AEF008B8FFD /* CoreGraphics.framework */; };
 		B1CA008F195B4AEF008B8FFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CA008E195B4AEF008B8FFD /* UIKit.framework */; };
@@ -70,6 +73,11 @@
 		B106DB9C1974E7240019EBE7 /* SecondaryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondaryCell.h; sourceTree = "<group>"; };
 		B106DB9D1974E7240019EBE7 /* SecondaryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondaryCell.m; sourceTree = "<group>"; };
 		B106DB9E1974E7240019EBE7 /* SecondaryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondaryCell.xib; sourceTree = "<group>"; };
+		B146E44719762185001BF1D4 /* CalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
+		B146E44819762185001BF1D4 /* CalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
+		B146E44919762185001BF1D4 /* CalculatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalculatorViewController.xib; sourceTree = "<group>"; };
+		B146E44C1976233B001BF1D4 /* CalculatorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorButton.h; sourceTree = "<group>"; };
+		B146E44D1976233B001BF1D4 /* CalculatorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorButton.m; sourceTree = "<group>"; };
 		B1CA0087195B4AEF008B8FFD /* Mission Asset Fund.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mission Asset Fund.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1CA008A195B4AEF008B8FFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B1CA008C195B4AEF008B8FFD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -128,6 +136,11 @@
 				B106DB8B1974E2210019EBE7 /* SettingsViewController.h */,
 				B106DB8C1974E2210019EBE7 /* SettingsViewController.m */,
 				B106DB8D1974E2210019EBE7 /* SettingsViewController.xib */,
+				B146E44719762185001BF1D4 /* CalculatorViewController.h */,
+				B146E44819762185001BF1D4 /* CalculatorViewController.m */,
+				B146E44919762185001BF1D4 /* CalculatorViewController.xib */,
+				B146E44C1976233B001BF1D4 /* CalculatorButton.h */,
+				B146E44D1976233B001BF1D4 /* CalculatorButton.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -303,6 +316,7 @@
 				B106DB8F1974E2210019EBE7 /* SettingsViewController.xib in Resources */,
 				B106DB801974E0060019EBE7 /* MainViewController.xib in Resources */,
 				B106DB951974E6540019EBE7 /* HeroCell.xib in Resources */,
+				B146E44B19762185001BF1D4 /* CalculatorViewController.xib in Resources */,
 				B106DB8A1974E2170019EBE7 /* AssetViewController.xib in Resources */,
 				B106DBA01974E7240019EBE7 /* SecondaryCell.xib in Resources */,
 				B1CA009D195B4AEF008B8FFD /* Images.xcassets in Resources */,
@@ -361,11 +375,13 @@
 			files = (
 				B1CA009B195B4AEF008B8FFD /* AppDelegate.m in Sources */,
 				B106DB7F1974E0060019EBE7 /* MainViewController.m in Sources */,
+				B146E44A19762185001BF1D4 /* CalculatorViewController.m in Sources */,
 				B106DB891974E2170019EBE7 /* AssetViewController.m in Sources */,
 				B106DB941974E6540019EBE7 /* HeroCell.m in Sources */,
 				B106DB8E1974E2210019EBE7 /* SettingsViewController.m in Sources */,
 				B1CA0097195B4AEF008B8FFD /* main.m in Sources */,
 				B106DB9A1974E7160019EBE7 /* SummaryCell.m in Sources */,
+				B146E44E1976233B001BF1D4 /* CalculatorButton.m in Sources */,
 				B106DB841974E20B0019EBE7 /* PaymentViewController.m in Sources */,
 				B106DB9F1974E7240019EBE7 /* SecondaryCell.m in Sources */,
 			);
