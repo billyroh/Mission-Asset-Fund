@@ -9,6 +9,10 @@
 #import "CalculatorViewController.h"
 
 @interface CalculatorViewController ()
+- (IBAction)onPayButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *payButton;
+@property (weak, nonatomic) IBOutlet UILabel *amountTextLabel;
+
 
 @end
 
@@ -27,6 +31,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    
+    self.payButton.layer.cornerRadius = (self.payButton.frame.size.width / 2);
+    self.amountTextLabel.text = @"$0.00";
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,4 +43,6 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)onPayButton:(id)sender {
+}
 @end

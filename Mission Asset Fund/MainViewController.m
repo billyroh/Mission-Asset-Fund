@@ -38,6 +38,18 @@
         self.paymentViewController = [[PaymentViewController alloc] init];
         self.assetViewController = [[AssetViewController alloc] init];
         self.settingsViewController = [[SettingsViewController alloc] init];
+        
+        
+        
+        self.paymentButton.layer.borderWidth = 1;
+        self.paymentButton.layer.borderColor = [UIColor whiteColor].CGColor;
+        self.paymentButton.layer.cornerRadius = (self.paymentButton.frame.size.width / 2);
+        self.assetsButton.layer.borderWidth = 1;
+        self.assetsButton.layer.borderColor = [UIColor whiteColor].CGColor;
+        self.assetsButton.layer.cornerRadius = (self.assetsButton.frame.size.width / 2);
+        self.settingsButton.layer.borderWidth = 1;
+        self.settingsButton.layer.borderColor = [UIColor whiteColor].CGColor;
+        self.settingsButton.layer.cornerRadius = (self.settingsButton.frame.size.width / 2);
     }
     return self;
 }

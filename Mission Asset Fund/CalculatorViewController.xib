@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalculatorViewController">
             <connections>
+                <outlet property="amountTextLabel" destination="giK-3e-zGs" id="xVH-DJ-8Ha"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -143,6 +144,9 @@
                         <color key="titleColor" red="0.15294118225574493" green="0.90980398654937744" blue="0.7568628191947937" alpha="1" colorSpace="deviceRGB"/>
                         <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="onPayButton:" destination="-1" eventType="touchUpInside" id="fdG-ap-bn5"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
