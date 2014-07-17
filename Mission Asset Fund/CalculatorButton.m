@@ -29,8 +29,9 @@
         // Our custom CALayer drawing will go here
         CALayer *layer = self.layer;
         
-        layer.cornerRadius = 4.5f;
-        layer.borderWidth = 1;
+//        layer.cornerRadius = 4.5f;
+        layer.cornerRadius = (self.frame.size.width / 2);
+        layer.borderWidth = 2;
         layer.borderColor = [UIColor whiteColor].CGColor;
     }
     return self;
